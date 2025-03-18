@@ -233,6 +233,22 @@ footer {
     text-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
 }
 
+#rateProject {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Bright color for visibility */
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+#rateProject:hover {
+    background-color: #ffa500; /* Darker shade on hover */
+    transform: scale(1.05);
+}
+
 footer a {
     color: #ffcc00;
     text-decoration: none;
