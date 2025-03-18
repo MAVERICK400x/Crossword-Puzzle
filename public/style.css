@@ -235,19 +235,41 @@ footer {
 
 #rateProject {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffcc00; /* Bright color for visibility */
+    padding: 12px 24px;
+    background-color: #ffcc00; /* Bright and visible */
     color: #000;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2rem;
     border-radius: 8px;
+    text-align: center;
     transition: background 0.3s, transform 0.2s;
 }
 
+/* Hover effect */
 #rateProject:hover {
-    background-color: #ffa500; /* Darker shade on hover */
+    background-color: #ffa500; /* Darker yellow on hover */
     transform: scale(1.05);
 }
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    #rateProject {
+        font-size: 1rem;
+        padding: 10px 20px;
+        width: 80%; /* Make it wider on smaller screens */
+        display: block; /* Center it */
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #rateProject {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+        width: 90%; /* Wider button for smaller devices */
+    }
+}}
 
 footer a {
     color: #ffcc00;
