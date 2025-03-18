@@ -1,0 +1,246 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+/* Title */
+h1 {
+    font-size: 36px;
+    background: linear-gradient(90deg, #ff8c00, #ff3b3b);
+    color: white;
+    padding: 15px;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+    text-shadow: 2px 2px 10px rgba(255, 140, 0, 0.8);
+}
+
+/* Player Name Display */
+#playerDisplay {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    background: rgba(255, 140, 0, 0.7); 
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Crossword Grid */
+#crossword {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 140, 0, 0.6);
+}
+
+/* Individual Cells */
+.cell {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ff8c00;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    margin: 3px;
+    background: #333;
+    box-shadow: inset 0px 0px 10px rgba(255, 140, 0, 0.3);
+    transition: 0.3s;
+}
+
+.cell input {
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+}
+
+/* Correct & Incorrect Answers */
+.correct {
+    background: rgba(40, 167, 69, 0.7); /* Green */
+    color: white;
+}
+
+.incorrect {
+    background: rgba(217, 83, 79, 0.7); /* Red */
+    color: white;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background: #ff8c00;
+    color: white;
+}
+
+button:hover {
+    background: #ff3b3b;
+}
+
+/* Score Display */
+#score {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.positive-score {
+    color: #28a745; /* Green for positive scores */
+}
+
+.negative-score {
+    color: #d9534f; /* Red for negative scores */
+}
+
+/* Level Selector */
+select {
+    padding: 10px;
+    font-size: 18px;
+    background: #222;
+    color: #ff8c00;
+    border: 2px solid #ff3b3b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playerName{
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 15px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+#playerName:hover
+{   
+    transition: 10s;
+    color: red;
+    text-transform: capitalize;
+}
+
+#rules {
+    margin: 20px auto; /* Centers the box horizontally */
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+    width: 60%;
+    color: #fff;
+    text-align: center; /* Centers text inside */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+    50% { box-shadow: 0 0 20px rgba(255, 165, 0, 0.8); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes borderAnimation {
+    0% { border-color: rgba(255, 165, 0, 0.3); }
+    50% { border-color: rgba(255, 165, 0, 1); }
+    100% { border-color: rgba(255, 165, 0, 0.3); }
+}
+
+#rules {
+    margin: 20px auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+    width: 60%;
+    color: #fff;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    animation: glow 2s infinite alternate, borderAnimation 3s infinite alternate;
+}
+
+
+#rules h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #FFA500;
+}
+
+#rules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#rules li {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers each list item */
+}
+
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.creator-name {
+    font-weight: bold;
+    color: #ff8c00;
+    text-shadow: 0 0 5px rgba(255, 140, 0, 0.7);
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #ff8c00;
+    text-shadow: 0 0 10px rgba(255, 140, 0, 1);
+}

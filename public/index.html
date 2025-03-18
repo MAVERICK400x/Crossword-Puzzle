@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crossword Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Name Entry Page -->
+    <div id="nameEntry">
+        <h1>Welcome to Crossword Puzzle</h1>
+        <label for="playerName">Enter Your Name:</label>
+        <input type="text" id="playerName" placeholder="Your Name">
+        <br><br>
+        <button onclick="startGame()">Start Game</button>
+    
+        <!-- Rules Section -->
+        <div id="rules">
+            <h2>Game Rules</h2>
+            <ul id="rulesList"></ul>
+        </div>
+    </div>
+
+    <!-- Crossword Game Page -->
+    <div id="gamePage" style="display: none;">
+        <h1>Crossword Puzzle</h1>
+        <p id="playerDisplay"></p>
+
+        <label for="level">Select Level:</label>
+        <select id="level" onchange="loadCrossword()" style="text-transform: capitalize;">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="mindcrack">Mind Crack</option>
+            <option value="coding">Coding round 1</option>
+            
+            <option value="code_output">Coding round 2</option>
+        </select>
+
+        <p>Score: <span id="score">0</span></p>
+
+        <!-- Flex Container for Layout -->
+        <div id="gameContainer">
+            <!-- Left Side: Clues -->
+            <div id="clues">
+                <h2>Clues</h2>
+                <ol id="clueList"></ol>
+            </div>
+
+            <!-- Right Side: Crossword Grid -->
+            <div id="crossword"></div>
+        </div>
+
+        <button onclick="checkAnswers()">Check Answers</button>
+        <button onclick="nextLevel()">Next Level</button>
+    </div>
+    <footer>
+        <p>Created by <span class="creator-name">B srinivasa ranganath</span></p>
+        <p>
+            <a href="https://github.com/MAVERICK400x" target="_blank">🔗 vist My GitHub</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
