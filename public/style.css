@@ -252,25 +252,6 @@ footer {
     transform: scale(1.05);
 }
 
-/* Responsive Styling */
-@media screen and (max-width: 768px) {
-    #rateProject {
-        font-size: 1rem;
-        padding: 10px 20px;
-        width: 80%; /* Make it wider on smaller screens */
-        display: block; /* Center it */
-        margin: 10px auto;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #rateProject {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-        width: 90%; /* Wider button for smaller devices */
-    }
-}}
-
 footer a {
     color: #ffcc00;
     text-decoration: none;
