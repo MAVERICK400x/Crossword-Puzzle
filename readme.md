@@ -21,3 +21,9 @@
 3️⃣ Read the clues and fill in the crossword grid
 4️⃣ Press “Check Answers” to verify your answers
 5️⃣ Complete levels to earn points and unlock the next level
+
+---
+
+If any error in live preview download zip file 
+📦 Install Dependencies
+    - npm install express cors ejs
