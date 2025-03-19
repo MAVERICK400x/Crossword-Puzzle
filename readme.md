@@ -26,4 +26,4 @@
 
 If any error in live preview download zip file 
 ## 📦 Install Dependencies
-pm install express cors ejs
+npm install express cors ejs
